@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="login-container">
+        <form action="">
+            <label for="email"><i class='bx bxs-envelope'></i> E-mail:</label>
+            <input type="email" name="" class="email" placeholder="example@gmail.com">
+    
+            <label for="senha"><i class='bx bxs-lock-alt'></i> Senha:</label>
+            <input type="password" name="" class="senha" placeholder="Insira a Senha">
+
+            <input type="submit" value="Entrar">
+
+            <p>Não possui conta? <a asp-controller= "Login" asp-action= "Cadastro" id="criar-conta">Registre-se</a></p>
+        </form>
+</div>

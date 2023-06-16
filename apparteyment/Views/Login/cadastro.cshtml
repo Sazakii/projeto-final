@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<div class="login-container">
+        <form id="cadastro-form" action="">
+            <label for="nome"><i class='bx bxs-user-circle'></i> Nome:</label>
+            <input type="text" name="nome" class="nome campo" placeholder="ex: Jonas">
+            <p>Máximo: 20 caracteres e apenas letras</p>
+
+            <label for="telefone"><i class='bx bxs-phone'></i> Telefone:</label>
+            <input type="text" name="telefone" class="telefone campo" placeholder="(00)00000-0000">
+
+            <label for="email"><i class='bx bxs-envelope'></i> E-mail:</label>
+            <input type="email" name="email" class="email campo" placeholder="example@gmail.com">
+    
+            <label for="senha"><i class='bx bxs-lock-alt'></i> Senha:</label>
+            <input type="password" name="senha" class="senha campo" placeholder="Insira a Senha">
+
+            <label for="senhaConf"><i class='bx bxs-lock-alt'></i> Confirmar Senha:</label>
+            <input type="password" name="senhaConf" class="senhaConf campo" placeholder="Insira a mesma Senha">
+
+            <div id="mensagem-erro"></div>      
+
+            <input class="submitBtn" type="submit" value="Cadastrar">
+
+            <a asp-controller= "Login" asp-action= "Index" id="criar-conta">Já tenho conta</a>
+        </form>
+</div>
+
+
+

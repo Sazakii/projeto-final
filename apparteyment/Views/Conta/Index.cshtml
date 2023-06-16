@@ -1,0 +1,34 @@
+@{
+    ViewData["Title"] = "Conta";
+}
+
+<div class="conta-box">
+        @* <img id="conta-banner" src="~/images/conta/teste4.jpg" alt=""> *@
+
+
+
+        <div class="conta-container">
+            <h1>Minha Conta Contact<span class="hub">Hub</span></h1>
+            <div class="info-container">
+                <div class="conta-icon">
+                    <i class='bx hub bxs-user-circle'></i>
+                </div>
+    
+                <div class="conta-info">
+
+                    <div class="nome">
+                        <!-- <h2 class="hub">Nome:</h2> -->
+                        <i class='hub bx bxs-user' ></i><p>Nome do usuário</p>
+                    </div>
+    
+                    <div class="telefone">
+                        <!-- <h2 class="hub">Telefone:</h2> -->
+                        <i class=' hub bx bxs-phone'></i><p>Telefone do usuário</p>
+                    </div>
+                </div>
+            </div>
+
+            <a asp-controller="Conta" asp-action="EditarConta">Editar Conta <i class='bx bxs-pencil' ></i></a>
+            <button class="logout">Desconectar <i class="fa-solid fa-right-from-bracket"></i></button>
+        </div>
+    </div>

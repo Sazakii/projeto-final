@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/*Formata��es gerais*/
+html {
+  font-size: 14px;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  font-family: "Poppins", sans-serif;
+  background: #141414;
+}
+
+
+/*Formata��es corpo do site*/
+
+.text-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 65px 0 65px 0;
+}
+
+.text-center #hub{
+  color: #e3aa00;
+}
+
+.hub {
+  color: #e3aa00;
+}
+
+
+/*Section 1*/
+
+.center-btn{
+  text-align: left;
+  bottom: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.center-btn a {
+  background-color: #252525;
+  border: 1px solid #e3aa00;
+  color: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  max-width: 400px;
+  text-decoration: none;
+  font-size: 1.3em;
+  margin-top: 35px;
+  transition: 0.5s;
+}
+
+.demo{
+    margin: 30px;
+    padding: 15px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.demo img {
+  height: 900px;
+  min-width: 100%;
+  opacity: 0.9;
+  border: 2px solid #e3aa00;
+  border-radius: 10px;
+}
+
+.demo p{
+    font-size: 2.3em;
+    text-align: left;
+    max-width: 500px;
+    bottom: 600px;
+    color: #fff;
+}
+
+/*Section 2*/
+
+section:nth-child(3){
+  margin-top: 300px;
+  width: 100%;
+}
+
+section:nth-child(3) h2{
+  text-align: right;
+  color: #fff;
+}
+
+section:nth-child(3) .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+section:nth-child(3) img{
+  height: 900px;
+  width: 105%;
+  opacity: 0.9;
+  border: 2px solid #e3aa00;
+  border-radius: 10px;
+}
+
+section:nth-child(3) span{
+  color: #e3aa00;
+}
+
+/*Section 3*/
+
+section:nth-child(4) .container {
+  margin-top: 330px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section:nth-child(4) i {
+  font-size: 4.5em;
+  color: #e3aa00;
+  display: block;
+}
+
+section:nth-child(4) h2 {
+  text-align: center;
+  color: #fff;
+  display: block;
+}
+
+/*Section 4*/
+
+  section:nth-child(5){
+    margin: 330px 0 80px 0;
+    width: 100%;
+  }
+
+  section:nth-child(5) h2{
+    text-align: center;
+    color: #fff;
+  }
+
+  section:nth-child(5) #experimentar{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #000;
+    background-color: #b38600;
+    border-radius: 25px;
+    padding: 30px;
+    transition: 0.5s;
+  }
+
+  section:nth-child(5) #experimentar:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s;
+  }
+  
+  section:nth-child(5) .container{
+    background-color: #252525;
+    padding: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+/* Política de Privacidade*/
+
+  .privacy-container {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .privacy-container h1{
+    font-size: 2.5em;
+    color: #fff;
+  }
+
+  .privacy-box {
+    margin: 20px;
+    gap: 20px;
+  }
+
+  .privacy-section {
+    margin: 30px;
+  }
+
+  .privacy-section h2 {
+    font-size: 2.2em;
+    font-weight: 500;
+    color: #e3aa00;
+  }
+
+  /*Erro da navbar aqui -- Resolvido*/
+  .privacy-section p, .privacy-box .privacy-section ul li {
+    font-size: 1.1em;
+    margin-top: 15px;
+    color: #fff;
+  }
+
+  .privacy-section ul .privacy-title {
+    color: #e3aa00;
+  }
+
+  .privacy-section img{
+    width: 100%;
+    height: 560px;
+    border: 2px solid #e3aa00;
+    border-radius: 10px;
+  }
+
+/*Lista de contatos*/
+
+.table {
+  color: #fff;
+  background-color: #1d1d1d;
+  border-radius: 20px;
+  margin: 0px auto;
+  margin-bottom: 140px;
+  width: 80%;
+}
+
+.table .table-top {
+  color: #e3aa00;
+}
+
+.btn-primary{
+  background-color: #e3aa00;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #b38600;
+  border: 1px solid #b38600;
+  color: #000;
+}
+
+.btn-danger{
+  border: 1px solid #000;
+}
+
+table, th, td {
+  border: 0;
+}
+
+thead {
+  border-bottom: 1px solid #090909;
+}
+
+table tbody i {
+  font-size: 2em;
+}
+
+/* formatação dos forms */
+
+.cadastrar-contato {
+  margin: 30px auto;
+  margin-bottom: 140px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cadastrar-contato h2 {
+  color: #fff;
+}
+
+.text-center span, form i{
+  color: rgb(236, 154, 0);
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  margin: 60px auto;
+  padding: 45px;
+  border: 2px solid #000;
+  border-radius: 25px;
+  width: 500px;
+  background-color: #222222e1;
+  color: #fff;
+}
+
+form label {
+  font-size: 1.4em;
+}
+
+form input[type="email"], input[type="password"], input[type="text"], input[type="tel"] {
+  height: 50px;
+  padding: 30px;
+  width: 100%;
+  text-align: left;
+  color: rgb(255, 166, 0);
+  border: 0;
+  border-radius: 25px;
+  background-color: #171717;
+}
+
+form input[type="email"]::placeholder, input[type="password"]::placeholder, input[type="text"]::placeholder, input[type="tel"]::placeholder {
+ color: rgba(255, 166, 0, 0.705);
+ opacity: 0.6;
+ text-align: left;
+}
+
+form input[type="submit"] {
+  background-color: rgb(238, 155, 0);
+  font-size: 1.01em;
+  font-weight: 600;
+  margin: 10px auto;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  border: 0;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  scale: 1.05;
+  transition: 0.3s ease;
+}
+
+form p {
+  margin: 5px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.301);
+}
+
+.login-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.login-container p, .login-container a {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.criar-btns, .edit-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.cancelar-btn {
+  text-decoration: none;
+  background-color: #c40404;
+  color: #fff;
+  font-size: 1.01em;
+  margin: 10px auto;
+  padding: 15px;
+  text-align: center;
+  border: 0;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cancelar-btn:hover {
+  color: #fff;
+  scale: 1.05;
+  transition: 0.3s ease;
+}
+
+#criar-conta{
+  text-decoration: none;
+  color: rgb(255, 166, 0);
+  font-size: 1.2em;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#criar-conta:hover{
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+#criar-conta:active{
+  color: #fff;
+}
+
+/*Confirmar exclusão*/
+
+.confirmar-exclusao {
+  color: #fff;
+  display: flex;
+  margin: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.exclude-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 20px;
+}
+
+/*Editar Contato*/
+
+.editar-contato {
+  margin: 30px 0 140px 0;
+  text-align: center;
+}
+
+.editar-contato p {
+  margin: 5px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.301);
+}
+
+.editar-contato h2{
+  color: #fff;
+}
+
+.editar-contato form .editar-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contato-info{
+  width: 100%;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  border: 2px solid #141414;
+  border-radius: 25px;
+}
+
+.contato-info i {
+  font-size: 5em;
+}
+
+.contato-info h3 {
+  margin: 8px;
+  font-size: 1.6em;
+}
+
+.contato-info p {
+  font-size: 1.1em;
+}
+
+/*Página da conta do usuário*/
+
+#conta-banner {
+  width: 80%;
+  height: 50%;
+  opacity: 0.3;
+  border: 3px solid #000;
+  border-radius: 25px;
+}
+
+.editar-conta {
+  margin: 25px 0 130px 0;
+}
+
+.editar-conta p{
+  margin: 5px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.301);
+}
+
+.editar-conta h2{
+  text-align: center;
+  color: #fff;
+}
+
+.editar-conta form .conta-info p{
+  background-color: #171717;
+}
+
+.conta-container, .conta-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding: 15px;
+  margin: 50px 0 100px 0;
+}
+
+.conta-container {
+  padding: 40px;
+  /* min-width: 30%; */
+  background-color: #141414;
+  border: 3px solid #0e0e0e;
+  border-radius: 25px;
+}
+
+.conta-container a{
+  text-decoration: none;
+  background-color: #e3aa00;
+  color: #000;
+  text-align: center;
+  padding: 15px;
+  border-radius: 25px;
+  margin-top: 25px;
+  font-size: 1.1em;
+  font-weight: 600;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.conta-container .logout, .logado-btns .logout{
+  background-color: #f00000;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  border: 0;
+  border-radius: 25px;
+  margin-top: 25px;
+  font-size: 1em;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.conta-container .logout:hover, .logado-btns .logout:hover {
+  background-color: #940000;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.conta-container .logout:active, .logado-btns .logout:active {
+  scale: 0.95;
+  transition: 0.5s;
+}
+
+.conta-container .logout i, .logado-btns .logout i {
+  font-size: 1.2em;
+}
+
+.conta-container a:hover{
+  background-color: #c36500;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.conta-container a:active{
+  scale: 0.95;
+  transition: 0.5s;
+}
+
+.conta-container a i{
+  font-size: 1.2em;
+}
+
+.conta-info p{
+  margin: 15px 0 15px 0;
+  font-size: 1.2em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.301);
+  background-color: #0e0e0e;
+  border-radius: 25px;
+  padding: 15px;
+  width: 100%;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.info-container .conta-icon {
+  font-size: 8em;
+}
+
+.nome, .telefone{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.nome i, .telefone i{
+  font-size: 1.8em;
+}
+
+/*Home logado*/
+
+.conta-logado{
+  display: flex;
+  flex-direction: row;
+  background-color: #1d1d1d;
+  height: 600px;
+  font-size: 1.3em;
+  padding: 55px;
+  margin: 20% auto;
+  border-radius: 25px;
+  gap: 70px;
+}
+
+.conta-logado .conta-info i{
+  font-size: 7em;
+}
+
+.conta-logado .conta-info p{
+  background-color: #1d1d1d;
+  font-size: 1em;
+  text-align: left;
+}
+
+.conta-logado .logado-btns {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.conta-logado .logado-btns a{
+  text-decoration: none;
+  background-color: #e3aa00;
+  border-radius: 25px;
+  color: #090909ec;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.conta-logado .logado-btns a:hover{
+  background-color: #c36500;
+  color: #fff;
+  transition: 0.5s;
+}
+
+#logado-banner {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    opacity: 0.1;
+    border: 3px solid #000;
+    border-radius: 25px;
+}
+/*Verificar senha*/
+
+/* #verificar {
+  border-radius: 15px;
+  padding: 5px;
+  color: #fff;
+  transition: 0.5s ease-in ease-out;
+} */
+
+/*Efeitos*/
+
+.center-btn a:hover {
+  background-color: #ffbf00;
+  color: #090909;
+  transition: 0.5s;
+}
+
+.center-btn a:active {
+  scale: 0.9;
+  transition: 0.5s;
+}
+
+/*Efeito revelar container ao scrollar*/
+
+.revela{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.revela.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+/*Media query e design responsivo*/
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1100px) {
+  .demo img, section:nth-child(3) img {
+    display: none;
+  }
+
+  .demo, .center-btn{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+
+  section:nth-child(3) h2 {
+    text-align: left;
+  }
+
+  .center-btn{
+    gap: 20px;
+  }
+
+  .demo p{
+    text-align: center;
+  }
+}
+
+@media (max-width: 1700px) {
+  .conta-container {
+      position: unset;
+  }
+
+  #conta-banner{
+      display: none;
+  }
+
+  .conta-box {
+      min-height: 100vh;
+  }
+
+  .conta-logado {
+    min-height: 500px;
+  }
+}

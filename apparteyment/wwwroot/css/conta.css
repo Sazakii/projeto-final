@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+}
+
+body {
+    margin: 0 auto;
+    margin-bottom: 60px;
+    background: #141414;
+  }
+
+.hub {
+    color: #e3aa00;
+  }
+
+.conta-container, .conta-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 15px;
+    margin: 5px;
+}
+
+.conta-container {
+    padding: 40px;
+    min-width: 30%;
+    background-color: #141414;
+    border: 3px solid #0e0e0e;
+    border-radius: 25px;
+    position: absolute;
+    top: 25%;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-container .conta-icon {
+    font-size: 8em;
+}
+
+.conta-container a{
+    text-decoration: none;
+    background-color: #e3aa00;
+    color: #000;
+    text-align: center;
+    padding: 15px;
+    border-radius: 25px;
+    margin-top: 25px;
+    font-size: 1.1em;
+    font-weight: 600;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.conta-container #logout{
+    background-color: #ff2424;
+    color: #000;
+    cursor: pointer;
+    padding: 15px;
+    border: 0;
+    border-radius: 25px;
+    margin-top: 25px;
+    font-size: 1.1em;
+    font-weight: 600;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.conta-container #logout:hover {
+    background-color: #940000;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.conta-container #logout:active {
+    scale: 0.95;
+    transition: 0.5s;
+}
+
+
+
+.conta-container #logout i {
+    font-size: 1.2em;
+}
+
+.conta-container a:hover{
+    background-color: #c36500;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.conta-container a:active{
+    scale: 0.95;
+    transition: 0.5s;
+}
+
+.conta-container a i{
+    font-size: 1.2em;
+}
+
+.conta-info p{
+    margin: 15px 0 15px 0;
+    font-size: 1.2em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.301);
+    background-color: #0e0e0e;
+    border-radius: 25px;
+    padding: 15px;
+    width: 100%;
+}
+
+.nome, .telefone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.editar-conta p{
+    margin: 5px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.301);
+}
+
+.editar-conta h2{
+    text-align: center;
+    color: #fff;
+}
+
+.editar-conta form .conta-info p{
+    background-color: #171717;
+}
+
+.criar-btns, .edit-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .cancelar-btn {
+    text-decoration: none;
+    background-color: #c40404;
+    color: #fff;
+    font-size: 1.01em;
+    margin: 10px auto;
+    padding: 15px;
+    text-align: center;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+.nome i, .telefone i{
+    font-size: 1.8em;
+}
+
+#conta-banner {
+    width: 80%;
+    height: 50%;
+    opacity: 0.3;
+    border: 3px solid #000;
+    border-radius: 25px;
+}
+
+@media (max-width: 1700px) {
+    .conta-container {
+        position: unset;
+    }
+
+    #conta-banner{
+        display: none;
+    }
+
+    .conta-box {
+        min-height: 100vh;
+    }
+}

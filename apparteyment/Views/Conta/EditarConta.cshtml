@@ -1,0 +1,51 @@
+@{
+    ViewData["Title"] = "Editar Conta";
+}
+
+<script src="~js/cadastro.js"></script>
+
+<div class="editar-conta">
+        <h2>Editar Conta</h2>
+    
+        <form action="">
+    
+            <div class="info-container">
+                <div class="conta-icon">
+                    <i class='bx hub bxs-user-circle'></i>
+                </div>
+    
+                <div class="conta-info">
+
+                    <div class="nome">
+                        <!-- <h2 class="hub">Nome:</h2> -->
+                        <i class='hub bx bxs-user' ></i><p>Nome do usuário</p>
+                    </div>
+    
+                    <div class="telefone">
+                        <!-- <h2 class="hub">Telefone:</h2> -->
+                        <i class=' hub bx bxs-phone'></i><p>Telefone do usuário</p>
+                    </div>
+                </div>
+            </div>
+    
+            <label for="nome"><i class='bx bxs-user-circle'></i> Editar Nome:</label>
+            <input type="text" name="" class="nome" placeholder="Edite seu nome aqui">
+            <p>Máximo: 20 caracteres e apenas letras</p>
+    
+            <label for="telefone"><i class='bx bxs-phone'></i> Editar Telefone:</label>
+            <input type="text" name="" class="telefone" placeholder="Edite seu telefone aqui">
+
+            <label for="telefone"><i class='bx bxs-lock-alt'></i> Editar Senha:</label>
+            <input type="password" name="" class="senha" placeholder="Edite sua senha aqui">
+
+            <label for="telefone"><i class='bx bxs-lock-alt'></i> Confirmar Senha:</label>
+            <input type="password" name="" class="senhaConf" placeholder="Confirme a alteração da senha">
+    
+            <p>Se o espaço estiver em branco, não haverá alterações nele.</p>
+    
+            <div class="edit-btns">
+                <a role= "button" class="cancelar-btn" asp-controller="Conta" asp-action="Index">Cancelar</a>
+                <input class="submitBtn" type="submit" value="Confirmar alterações">
+            </div>
+        </form>
+    </div>

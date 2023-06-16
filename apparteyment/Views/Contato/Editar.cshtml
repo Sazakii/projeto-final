@@ -1,0 +1,27 @@
+﻿@model ContactModel
+
+<div class="editar-contato">
+    <h2>Editar Contato</h2>
+
+    <form method="post" id="editar-form" action="Editar">
+
+        <input type="hidden" name="ID" value="@Model.ID" />
+
+        <label for="nome"><i class='bx bxs-user-circle'></i> Editar Nome do Contato:</label>
+        <input type="text" name="Nome" class="nome" placeholder="ex: Jonas" value="@Model.Nome">
+        <p>Máximo: 20 caracteres e apenas letras</p>
+
+        <label for="email"><i class='bx bxs-envelope'></i> Editar E-mail do Contato:</label>
+        <input type="text" name="Email" class="email" placeholder="example@gmail.com" value="@Model.Email">
+
+        <label for="telefone"><i class='bx bxs-phone'></i> Editar Telefone:</label>
+        <input type="text" name="Numero" class="Numero" placeholder="(00)00000-0000" value="@Model.Numero">
+
+        <p>Se o espaço estiver em branco, não haverá alterações nele.</p>
+
+        <div class="edit-btns">
+            <a role="button" class="cancelar-btn" href="@Url.Action("Index", "Contato")">Cancelar</a>
+            <input type="submit" value="Editar Contato">
+        </div>
+    </form>
+</div>

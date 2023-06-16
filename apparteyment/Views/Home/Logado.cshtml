@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Página Inicial - Logado";
+}
+
+@* <img id="logado-banner" src="~/images/conta/teste3.jpg" alt=""> *@
+
+<div class="conta-box conta-logado">
+    <div class="conta-info">
+        <i class='bx hub bxs-user-circle'></i>
+        <h3>Bem-vindo, <span class="hub">Usuário!</span></h3>
+        <p>O que gostaria de fazer?</p>
+    </div>
+
+    <div class="logado-btns">
+        <a asp-controller="Conta" asp-action="Index">Meu perfil</a>
+        <a asp-controller="Contato" asp-action="Index">Meus contatos</a>
+        <button class="logout">Desconectar <i class="fa-solid fa-right-from-bracket"></i></button>
+    </div>
+</div>

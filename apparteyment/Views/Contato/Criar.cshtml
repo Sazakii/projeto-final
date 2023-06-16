@@ -1,0 +1,26 @@
+﻿@model ContactModel
+@{
+    ViewData["Title"] = "Criar contatos";
+}
+
+<div class="cadastrar-contato">
+    <h2>Cadastrar Contato</h2>
+
+    <form asp-controller="Contato" asp-action="Criar" method="post">
+
+        <label for="nome"><i class='bx bxs-user-circle'></i> Nome do Contato:</label>
+        <input type="text" name="Nome" asp-for="Nome" class="nome" placeholder="ex: Jonas">
+        <p>Máximo: 20 caracteres e apenas letras</p>
+
+        <label for="email"><i class='bx bxs-envelope'></i> E-mail do Contato:</label>
+        <input type="text" name="Email" asp-for="Email" class="email" placeholder="example@gmail.com">
+
+        <label for="telefone"><i class='bx bxs-phone'></i> Telefone:</label>
+        <input type="text" name="Numero" asp-for="Numero" class="telefone" placeholder="(00)00000-0000">
+
+        <div class="criar-btns">
+            <a role="button" class="cancelar-btn" asp-controller="Contato" asp-action="Index">Cancelar</a>
+            <input type="submit" value="Cadastrar Contato">
+        </div>
+    </form>
+</div>

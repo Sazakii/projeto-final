@@ -1,0 +1,26 @@
+﻿@model ContactModel
+
+<div class="apagar-confirmacao">
+    <h2 style="color: yellow;">Confirmação de Exclusão</h2>
+
+    <div class="contato-info">
+        <i class='bx bxs-user-circle'></i>
+
+        <h3 class="hub" style="color: yellow;">Nome</h3>
+        <p>@Model.Nome</p>
+
+        <h3 class="hub" style="color: yellow;">Telefone</h3>
+        <p>@Model.Numero</p>
+
+        <h3 class="hub" style="color: yellow;">Email</h3>
+        <p>@Model.Email</p>
+    </div>
+
+    <p style="color: yellow;">Você tem certeza de que deseja excluir este contato?</p>
+
+    <form asp-controller="Contato" asp-action="Apagar" method="post">
+        <input type="hidden" asp-for="ID" />
+        <button type="submit" class="btn btn-danger" style="background-color: red; color: white;">Excluir</button>
+        <a href="@Url.Action("Index", "Contato")" class="btn btn-secondary" style="background-color: gray; color: white;">Cancelar</a>
+    </form>
+</div>

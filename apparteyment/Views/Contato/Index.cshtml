@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ContactModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Lista de contatos";
+}
+
+<table class="table">
+    <br />
+    <thead>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a class="btn btn-primary" id="adicionar-btn" role="button" asp-controller="Contato" asp-action="Criar">
+                <i class='bx bxs-user-plus'></i> Adicionar Novo contato
+            </a>
+
+        <tr>
+            <br />
+            <th class="table-top" scope="col">Nome</th>
+            <th class="table-top" scope="col">E-mail</th>
+            <th class="table-top" scope="col">Número</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            @foreach (var contactDB in Model)
+            {
+                <tr>
+                    <td>@contactDB.Nome</td>
+                    <td>@Html.DisplayFor(modelItem => contactDB.Email)</td>
+                    <td>@Html.DisplayFor(modelItem => contactDB.Numero)</td>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar" asp-route-id="@contactDB.ID">Editar</a>
+                            <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="ApagarConfirmacao" asp-route-id="@contactDB.ID">Apagar</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
